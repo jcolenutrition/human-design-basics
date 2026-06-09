@@ -10,21 +10,25 @@ This is intentionally separate from the Recovered, Now What? / RRR worksheet eng
 - Explains what birth details are needed
 - Links to a free external chart calculator
 - Gives visitors a checklist of chart basics to save
-- Can be deployed separately or embedded in a WordPress page with an iframe
+- Includes a generated hero image
+- Can be deployed separately on Vercel, then linked from the main website
 
 ## Files
 
 - `index.html`
 - `styles.css`
+- `assets/human-design-basics-hero.png`
 
-## Embed Example
+## Local Preview
 
-After deploying this folder, embed it on a WordPress page with:
+From this folder, run:
 
-```html
-<iframe
-  src="YOUR_DEPLOYED_URL"
-  style="width:100%; min-height:1100px; border:0;"
-  loading="lazy"
-></iframe>
+```bash
+python3 -m http.server 4188
 ```
+
+Then open `http://127.0.0.1:4188`.
+
+## Vercel Deployment
+
+This folder can be deployed as a static site. In Vercel, create a new project from this folder/repo and leave the framework preset as "Other" or static HTML.
